@@ -1,0 +1,86 @@
+.container.dash-topbar {
+    background-color: #aaa;
+}
+
+.container.dash-topbar .dash-btn {
+    border-radius: 2rem;
+    border: 1px solid gray;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 .5rem;
+    padding: .5rem 1.5rem;
+}
+
+.dash-main-head {
+    margin-bottom: 1rem;
+}
+
+.container.dash-topbar .dash-btn:hover,
+.container.dash-topbar .dash-btn:hover {
+    background-color: #dcd6d6;
+    color: #0969e7;
+}
+
+#export-btn {
+    width: 8rem;
+}
+
+.row.dash-search-criteria div {
+    width: 100%;
+}
+
+.row.dash-search-criteria input,
+.row.dash-search-criteria select {
+    width: 70%;
+}
+
+.search-result-wrapper {
+    border: 1px solid gray;
+    position: relative;
+}
+
+.search-result-wrapper table {
+    width: 100%;
+    text-align: left;
+    border-spacing: 0;
+}
+
+.search-result-wrapper table th {
+    background-color: #77B8AF;
+}
+
+.search-result-wrapper table tbody tr {
+    cursor: pointer;
+}
+
+.search-result-wrapper table tbody tr:hover {
+    background-color: #10cdf7;
+}
+
+.passport-photo {
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.passport-photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+}
+
+.files-section .ppt-file img {
+    height: 300px;
+}
+
+.files-section h4 {
+    margin-bottom: 1rem;
+}
+
+a.file-link {
+    color: #0969e7;
+    padding: .5rem 1rem;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin: 2rem 1rem 0rem 0rem;
+    text-decoration: none;
+}

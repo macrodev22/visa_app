@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="vendor/fonts/css/all.css" />
+    <!-- <link rel="stylesheet" href="vendor/css/all.css"> -->
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-name">
+        <div class="logo-image">
+          <img src="images/logo-social.png" alt="" />
+        </div>
+        <span class="logo-name-text">OnPoint Visa</span>
+      </div>
+
+      <div class="menu-items">
+        <ul class="nav-link">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              <span class="link-name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-users"></i>
+              <span class="link-name">Users</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-file-lines"></i>
+              <span class="link-name">Applications</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-passport"></i>
+              <span class="link-name">Visa Types</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-book"></i>
+              <span class="link-name">Requirements</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="logout-mod">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span class="link-name">Logout</span>
+            </a>
+          </li>
+          <li class="mode">
+            <a href="#">
+              <i class="fa-regular fa-moon link-name"></i>
+              <span class="link-name">Theme</span>
+            </a>
+            <div class="mode-toggle">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="dashboard">
+      <div class="top">
+        <div class="sidebar-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="search-box">
+          <i class="fa-brands fa-searchengin"></i>
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <img src="images/user-profile.webp" alt="user" />
+        <div class="user-info display-none">
+          <p>Ivan Sempebwa</p>
+          <p>Admin</p>
+        </div>
+      </div>
+
+      <div class="dash-content">
+        <div class="overview">
+          <div class="title">
+            <i class="fa-solid fa-gauge-high"></i>
+            <span class="text">Dashboard</span>
+          </div>
+
+          <div class="boxes">
+            <div class="box box1">
+              <i class="fa-solid fa-person-digging"></i>
+              <span class="text">Total in process</span>
+              <span class="number">30</span>
+            </div>
+            <div class="box box2">
+              <i class="fa-solid fa-chart-pie"></i>
+              <span class="text">Total applications</span>
+              <span class="number">300</span>
+            </div>
+            <div class="box box3">
+              <i class="fa-regular fa-circle-check"></i>
+              <span class="text">Total approved</span>
+              <span class="number">270</span>
+            </div>
+          </div>
+        </div>
+        <div class="activity">
+          <div class="title">
+            <i class="fa-solid fa-list-check"></i>
+            <span class="text">Applications</span>
+          </div>
+          <div class="activity-data">
+            <table class="activity-data-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Fullname</th>
+                  <th>Gender</th>
+                  <th>Marital Status</th>
+                  <th>Date of Birth</th>
+                  <th>Nationality</th>
+                  <th>Type</th>
+                  <th>Status</th>
+                  <th>Date Applied</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr onclick="window.open('/applications/234', '_blank')">
+                  <td>234</td>
+                  <td>PRASAD SOONO</td>
+                  <td>M</td>
+                  <td>Married</td>
+                  <td>31-Jan-1990</td>
+                  <td>India</td>
+                  <td>Visa</td>
+                  <td><span class="status processing">Processing</span></td>
+                  <td>20-Jan-2023</td>
+                </tr>
+                <tr onclick="window.open('/applications/234', '_blank')">
+                  <td>234</td>
+                  <td>PRASAD SOONO</td>
+                  <td>M</td>
+                  <td>Married</td>
+                  <td>31-Jan-1990</td>
+                  <td>India</td>
+                  <td>Visa</td>
+                  <td><span class="status approved">Approved</span></td>
+                  <td>20-Jan-2023</td>
+                </tr>
+                <tr onclick="window.open('/applications/234', '_blank')">
+                  <td>234</td>
+                  <td>PRASAD SOONO</td>
+                  <td>M</td>
+                  <td>Married</td>
+                  <td>31-Jan-1990</td>
+                  <td>India</td>
+                  <td>Visa</td>
+                  <td><span class="status rejected">Rejected</span></td>
+                  <td>20-Jan-2023</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

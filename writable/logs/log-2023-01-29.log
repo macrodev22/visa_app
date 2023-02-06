@@ -1,0 +1,574 @@
+ERROR - 2023-01-29 20:06:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(114): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#13 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(114): CodeIgniter\CLI\Commands->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#12 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-01-29 20:06:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(114): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#13 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(114): CodeIgniter\CLI\Commands->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#12 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-01-29 20:11:08 --> mysqli_sql_exception: Failed to open the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(84): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(114): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#13 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-01-29 20:12:51 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'ivan'@'localhost' to database 'ci4Visa' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(114): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#13 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' to database 'ci4Visa' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(114): CodeIgniter\CLI\Commands->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#12 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-01-29 20:12:51 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'ivan'@'localhost' to database 'ci4Visa' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(173): mysqli->real_connect()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(114): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#13 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' to database 'ci4Visa' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(114): CodeIgniter\CLI\Commands->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#12 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-01-29 20:14:01 --> mysqli_sql_exception: Failed to open the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(84): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/BaseCommand.php(114): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#13 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-01-29 20:26:41 --> mysqli_sql_exception: Failed to open the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(84): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 20:32:58 --> mysqli_sql_exception: Failed to open the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(84): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 20:34:21 --> mysqli_sql_exception: Failed to add the foreign key constraint. Missing index for constraint 'applicationid_fk' in the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(84): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 20:36:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci' at line 21 in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(84): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 20:36:51 --> mysqli_sql_exception: Failed to add the foreign key constraint. Missing index for constraint 'visaapplicant_application_id_foreign' in the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(84): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 20:41:27 --> mysqli_sql_exception: Failed to add the foreign key constraint. Missing index for constraint 'applicationid_fk' in the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(84): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 20:43:47 --> mysqli_sql_exception: Failed to add the foreign key constraint. Missing index for constraint 'applicationid_fk' in the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(84): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 20:46:43 --> mysqli_sql_exception: Failed to add the foreign key constraint. Missing index for constraint 'applicationid_fk' in the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(84): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-01-29 20:59:07 --> Class "Config\Visa" not found
+in APPPATH/Config/Routes.php on line 33.
+ 1 SYSTEMPATH/Router/RouteCollection.php(266): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 20:59:11 --> Class "Config\Visa" not found
+in APPPATH/Config/Routes.php on line 33.
+ 1 SYSTEMPATH/Router/RouteCollection.php(266): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 20:59:14 --> Class "Config\Visa" not found
+in APPPATH/Config/Routes.php on line 33.
+ 1 SYSTEMPATH/Router/RouteCollection.php(266): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-29 21:13:17 --> mysqli_sql_exception: Failed to add the foreign key constraint. Missing index for constraint 'applicationid_fk' in the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(85): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 21:13:28 --> mysqli_sql_exception: Failed to add the foreign key constraint. Missing index for constraint 'applicationid_fk' in the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(85): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 21:15:01 --> mysqli_sql_exception: Failed to add the foreign key constraint. Missing index for constraint 'applicationid_fk' in the referenced table 'visaapplication' in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185034_Applicant.php(85): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Applicant->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 21:15:24 --> mysqli_sql_exception: Table 'visaapplication' already exists in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185045_Application.php(32): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Application->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 21:19:01 --> mysqli_sql_exception: Table 'visaapplication' already exists in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185033_Application.php(32): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Application->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-29 21:19:30 --> mysqli_sql_exception: Table 'visaapplication' already exists in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/app/Database/Migrations/2023-01-29-185054_Application.php(32): CodeIgniter\Database\Forge->createTable()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(877): App\Database\Migrations\Application->up()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /home/ivan/nativeProjects/VisaAppCi4/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-01-29 21:57:10 --> Call to undefined method CodeIgniter\View\View::extends()
+in APPPATH/Views/staff_signup.php on line 1.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Visa.php(29): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->signup()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 21:57:55 --> Call to undefined method CodeIgniter\View\View::extends()
+in APPPATH/Views/staff_signup.php on line 1.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Visa.php(29): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->signup()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 22:10:27 --> Invalid file: "layout/auth_base.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Visa.php(33): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->checkApplication()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 22:10:35 --> Invalid file: "layout/auth_base.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Visa.php(33): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->checkApplication()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 22:12:07 --> Invalid file: "layout/auth_base.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Visa.php(33): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->checkApplication()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 22:43:08 --> Array callback must have exactly two elements
+in APPPATH/Controllers/Visa.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->staffLoginAuthenticate()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 23:05:28 --> Array callback must have exactly two elements
+in APPPATH/Controllers/Visa.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->staffLoginAuthenticate()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 23:05:33 --> Array callback must have exactly two elements
+in APPPATH/Controllers/Visa.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->staffLoginAuthenticate()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 23:05:55 --> Array callback must have exactly two elements
+in APPPATH/Controllers/Visa.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->staffLoginAuthenticate()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-29 23:06:15 --> Array callback must have exactly two elements
+in APPPATH/Controllers/Visa.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->staffLoginAuthenticate()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-29 23:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-29 23:30:23 --> Call to undefined function validation_list_errors()
+in APPPATH/Views/staff_signup.php on line 5.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1177): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Visa.php(30): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Visa->signup()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-29 23:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-29 23:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-29 23:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-29 23:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-29 23:52:46 --> CSRF token verified.
+INFO - 2023-01-29 23:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-01-29 23:54:05 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-29 23:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-29 23:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-01-29 23:54:53 --> CSRF token verified.
+CRITICAL - 2023-01-29 23:54:53 --> "minlength" is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 320.
+ 1 SYSTEMPATH/Validation/Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+ 2 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules()
+ 3 SYSTEMPATH/Controller.php(155): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH/Controllers/Staff.php(31): CodeIgniter\Controller->validateData()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Staff->create()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-29 23:55:31 --> CSRF token verified.
+CRITICAL - 2023-01-29 23:55:31 --> "email" is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 320.
+ 1 SYSTEMPATH/Validation/Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+ 2 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules()
+ 3 SYSTEMPATH/Controller.php(155): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH/Controllers/Staff.php(31): CodeIgniter\Controller->validateData()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Staff->create()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-29 23:55:54 --> CSRF token verified.
+CRITICAL - 2023-01-29 23:55:54 --> Call to undefined method App\Controllers\Staff::save()
+in APPPATH/Controllers/Staff.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Staff->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-29 23:57:36 --> CSRF token verified.
+ERROR - 2023-01-29 23:57:36 --> mysqli_sql_exception: Table 'ci4Visa.visa-staffs' doesn't exist in /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+#4 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Model.php(729): CodeIgniter\BaseModel->insert()
+#7 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/BaseModel.php(692): CodeIgniter\Model->insert()
+#8 /home/ivan/nativeProjects/VisaAppCi4/app/Controllers/Staff.php(44): CodeIgniter\BaseModel->save()
+#9 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Staff->create()
+#10 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#11 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/ivan/nativeProjects/VisaAppCi4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /home/ivan/nativeProjects/VisaAppCi4/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('...')
+#14 {main}
+CRITICAL - 2023-01-29 23:57:36 --> Table 'ci4Visa.visa-staffs' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(729): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/Staff.php(44): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Staff->create()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-01-29 23:57:55 --> CSRF token verified.
