@@ -50,7 +50,7 @@
               <tbody>
                 <?php helper('retrieve_helper') ?>
                 <?php foreach($applications->getResultArray() as $row): ?>
-                <tr onclick="window.open('/applications/<?= $row['id'] ?>', '_blank')">
+                <tr onclick="window.open('/applications/?id=<?= $row['id'] ?>', '_blank')">
                   <td><?= $row['application_id'] ?></td>
                   <td><?= $row['first_name'] ?> <?= $row['surname'] ?></td>
                   <td><?= strtoupper($row['gender']) ?></td>

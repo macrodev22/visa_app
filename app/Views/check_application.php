@@ -5,6 +5,7 @@
 <h1>Check Application / Applicant Login</h1>
 
 <form action="" class="form" method="POST">
+    <?= csrf_field() ?>
     <div class="form-input-group">
         <label for="email">email</label>
         <input type="email" name="email">

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/static/vendors/css/bootstrap.min.css">
     <script src="/static/vendors/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/styles/visa.css">
+    <?= $this->renderSection('styles') ?>
 </head>
 <body>
     <header>

@@ -85,8 +85,8 @@
           <i class="fa-brands fa-searchengin"></i>
           <input type="text" placeholder="Search..." />
         </div>
-
-        <img src="/assets/images/user-profile.webp" alt="user" />
+      
+        <img src="<?= $profile_picture ?>" alt="user" />
         <div class="user-info display-none">
           <p><?= $first_name ?> <?= $last_name ?></p>
           <p><?= $username ?></p>

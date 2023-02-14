@@ -115,6 +115,55 @@ class Visa extends BaseController
             ];
             $applicationModel->insert($applicationData);
             $applicationId = $applicationModel->getInsertID();
+
+            $rules = [
+                'ppt-copy' => 'mime_in[ppt-copy,image/jpg,image/jpeg,image/gif,image/png,image/webp,application/pdf]',
+                'ppt-photo' => 'is_image[ppt-photo]|mime_in[ppt-photo,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+            ];
+
+            $files = ['ppt' => '', 'photo' => ''];
+            $other_files_paths = array();
+            if($this->validate($rules))
+            {
+                $ppt_file = $this->request->getFile('ppt-copy');
+                $ppt_pic_file = $this->request->getFile('ppt-photo');
+                $ppt_name = $ppt_file->getRandomName();
+                $photo_name = $ppt_pic_file->getRandomName();
+                $storage_path = './assets/uploads/applicants/';
+                $ppt_file->move($storage_path, $ppt_name);
+                $ppt_pic_file->move($storage_path, $photo_name);
+                $files['ppt'] = ltrim($storage_path, '.').$ppt_name;
+                $files['photo'] = ltrim($storage_path, '.').$photo_name;
+
+                //Other files
+                $other_files = $this->request->getFiles();
+                foreach($other_files as $name => $file)
+                {
+                    if(!$file->hasMoved())
+                    {
+                        $rule_txt = "mime_in[$name,image/jpg,image/jpeg,image/gif,image/png,image/webp,application/pdf]";
+                        $rule_key = $name;
+                        $rule_arr = [
+                            $rule_key => $rule_txt,
+                        ];
+                        if($this->validate($rule_arr))
+                        {    
+                            $file_name = $file->getRandomName();
+                            $storage_path = './assets/files/other-files/';
+                            $file->move($storage_path, $file_name);
+                            $path = ltrim($storage_path ,'.') . $file_name;
+                            // array_push($other_files_paths, [$name => $path]);
+                            $other_files_paths[$name] = $path;
+                        }
+                    }
+                }
+
+            }
+            else 
+            {
+                $errors = $this->validator->getError();
+                echo json_encode($errors);
+            }
             $model->save([
                 'first_name' => $data['firstname'],
                 'middle_name' => $data['middlename'],
@@ -129,9 +178,30 @@ class Visa extends BaseController
                 'mother_name' => $data['mother-name'],  
                 'place_of_birth' => $data['place-of-birth'], 
                 'email' => $data['email'], 
-                'password' => password_hash($data['email'], PASSWORD_BCRYPT), 
+                'password' => password_hash($data['password1'], PASSWORD_BCRYPT), 
                 'application_id' => $applicationId,
+                'passport_path' => $files['ppt'],
+                'photo_path' => $files['photo'],
             ]);
+
+            $attachmentModel = model(AttachmentModel::class);
+            // $requirementModel = model(RequirementModel::class);
+            $applicantId = $model->getInsertID();
+            foreach($other_files_paths as $key => $file_path)
+            {
+                
+                // $name = $file_path['name'];
+                $name = $key;
+                
+                $attachment_data = [
+                    'applicant_id' => $applicantId,
+                    // 'requirement_id' => null,
+                    'name' => $name,
+                    'attachment_path' => $file_path,
+                ];
+
+                $attachmentModel->save($attachment_data);
+            }
 
             $this->response->setJSON($applicationId);
             $this->response->setStatusCode(400, 'Successfully added applicant');

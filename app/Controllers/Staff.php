@@ -35,10 +35,23 @@ class Staff extends BaseController
             'email' => 'required|valid_email|is_unique[staff.email]', 
             'username' => 'required|min_length[5]', 
             'password' => 'required|min_length[8]', 
-            'role' => 'required'
+            'role' => 'required',
+            'profile' => 'is_image[profile]|mime_in[profile,image/jpg,image/jpeg,image/gif,image/png,image/webp]'
         ])) //Failed validation redisplays form
         {
-            return view('staff_signup');
+            $data = ['errors' => $this->validator->getErrors()];
+            $data = array_merge($data, $post);
+            return view('staff_signup' ,$data);
+        }
+
+        $profile_pic = $this->request->getFile('profile');
+        if(! $profile_pic->hasMoved())
+        {
+            $newName = $profile_pic->getRandomName();
+            $profile_path = './assets/uploads/profiles/';
+            $profile_pic->move($profile_path, $newName);
+            
+            $profile_path = './assets/uploads/profiles/'. $newName;
         }
 
         $model = model(StaffModel::class);
@@ -46,7 +59,7 @@ class Staff extends BaseController
             'role' => $post['role'],
             'first_name' => $post['firstname'],
             'last_name' => $post['lastname'],
-            // 'profile_picture' => $post['lastname'],
+            'profile_picture' => $profile_path,
             'username' => $post['username'],
             'email' => $post['email'],
             'password' => password_hash($post['password'], PASSWORD_BCRYPT),
@@ -56,7 +69,7 @@ class Staff extends BaseController
             'role' => $post['role'],
             'first_name' => $post['firstname'],
             'last_name' => $post['lastname'],
-            // 'profile_picture' => $post['lastname'],
+            'profile_picture' => $profile_path,
             'username' => $post['username'],
             'email' => $post['email'],
             'logged_in' => TRUE,
@@ -70,7 +83,7 @@ class Staff extends BaseController
     public function dashboard()
     {
         $session = session();
-        
+        helper('retrieve_helper');
         $data = [];
         if($session->has('username') && $session->has('email'))
         {
@@ -84,7 +97,7 @@ class Staff extends BaseController
                 'role' => $role,
                 'first_name' => $fname,
                 'last_name' => $lname,
-                // 'profile_picture' => $post['lastname'],
+                'profile_picture' => getProfilePicture($username),
                 'username' => $username,
                 'email' => $email,
             ];

@@ -14,7 +14,7 @@ class ApplicantModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = false;
-    protected $allowedFields    = ['first_name', 'middle_name', 'surname', 'date_of_birth', 'nationality', 'gender', 'marital_status', 'passport_number', 'passport_expiry', 'father_name', 'mother_name', 'place_of_birth', 'email', 'password', 'passport_path', 'photo_path', 'application_id'];
+    protected $allowedFields    = ['first_name', 'middle_name', 'surname', 'date_of_birth', 'nationality', 'gender', 'marital_status', 'passport_number', 'passport_expiry', 'father_name', 'mother_name', 'place_of_birth', 'email', 'password', 'passport_path', 'photo_path', 'application_id', 'other_attachments'];
 
     // Dates
     protected $useTimestamps = false;

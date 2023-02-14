@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,200;0,300;0,500;1,100;1,200;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,400&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,6 +32,21 @@
 
     /* ======================= OTHER ============================== */
     --nav-width: 250px;
+}
+
+.btn {
+    border-radius: 10px;
+    border: 1px solid var(--box1-color);
+    padding: .5rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline-block;
+    margin: .5rem;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--panel-color);
 }
 
 body {
@@ -136,8 +153,7 @@ nav.close .menu-items li a .link-name {
 }
 
 .nav-link li a:hover .link-name,
-.nav-link li a:hover i
-{
+.nav-link li a:hover i {
     color: var(--primary-color);
 }
 
@@ -222,7 +238,7 @@ body.dark .switch::before {
     padding-right: 1.5rem;
 }
 
-nav.close ~ .dashboard {
+nav.close~.dashboard {
     left: 73px;
     width: calc(100% - 73px);
 }
@@ -238,7 +254,7 @@ nav.close ~ .dashboard {
     transition: var(--tran-03);
 }
 
-nav.close ~ .dashboard .top {
+nav.close~.dashboard .top {
     left: 73px;
     width: calc(100% - 73px);
 }
@@ -255,7 +271,7 @@ nav.close ~ .dashboard .top {
     height: 45px;
     margin: 0 1.8rem;
     position: relative;
-    color: var(--text-color);    
+    color: var(--text-color);
 }
 
 .dashboard .top .search-box input {
@@ -371,6 +387,23 @@ nav.close ~ .dashboard .top {
     color: var(--text-color);
 }
 
+.dash-content table {
+    color: var(--text-color);
+}
+
+.dash-content table td,
+.dash-content table th {
+    padding: 0 .5rem;
+}
+
+.dash-content table th {
+    background-color: var(--box1-color);
+}
+
+.dash-content table.tabular-data tr:nth-child(odd) {
+    background-color: var(--border-color);
+}
+
 .dash-content .boxes .box.box1 {
     background-color: var(--box1-color);
 }
@@ -416,3 +449,14 @@ nav.close ~ .dashboard .top {
     background-color: var(--success-color);
 }
 
+table#user-table td input {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 0;
+    width: 10rem;
+    border: 0;
+}
+
+table#user-table td:first-child input {
+    width: 5rem;
+}
