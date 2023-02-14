@@ -127,4 +127,4 @@ nb-configuration.xml
 
 #Specific
 /public/uploads/
-/public/files/
+/public/assets/files/*
